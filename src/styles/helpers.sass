@@ -28,19 +28,21 @@
 =sf-pro-display
   font-family: 'SFProDisplay-Bold'
 
-// colors
+// SISTEMA DE COLORES
+// ------------------------
+
+// 1. COLORES SEMÁNTICOS PRINCIPALES (usar estos nombres en código nuevo)
+$primary: #6366F1        // Color principal (violeta)
+$primary-dark: #3D417C   // Variante oscura del principal
+$primary-light: #F0B4F0  // Variante clara del principal 
+$whatsapp: #25D366       // Verde específico para WhatsApp
+
+// 2. COLORES PARA GRADIENTES
+$gradient-start: #3485FD // Inicio del gradiente (azul)
+$gradient-end: #FEBBFF   // Fin del gradiente (rosa)
+
+// 3. COLORES BASE Y NEUTROS
 $white: #ffffff
-$red: #6366F1
-$purple: #9757D7
-$purple-light: #CDB4DB
-$pink: #EF466F
-$green: #45B26B
-$blue: #3772FF
-$asphalt: #E4D7CF
-$yellow: #FFD166
-
-
-
 $neutrals1: #141416
 $neutrals2: #23262F
 $neutrals3: #353945
@@ -50,24 +52,45 @@ $neutrals6: #E6E8EC
 $neutrals7: #F4F5F6
 $neutrals8: #FCFCFD
 
+// 4. VARIABLES LEGACY (mantener para compatibilidad con el template original)
+// NOTA: Siempre preferir usar las variables semánticas de arriba para código nuevo
+$red: $primary           // ⚠️ No es rojo, es violeta - mantener por compatibilidad
+$purple: $primary-dark   // Ahora apunta a primary-dark
+$purple-light: $primary-light
+$pink: $primary-light    // Ahora igual a primary-light
+$blue: $gradient-start   // Ahora apunta a gradient-start
+$green: $whatsapp        // Verde específico para WhatsApp
+$asphalt: #E4D7CF        // Mantenido sin cambios
+$yellow: #FFD166         // Mantenido sin cambios
+
+// 5. COLORES PARA TEMA OSCURO
+$dark-neutrals1: #FCFCFD
+$dark-neutrals2: #F4F5F6
+$dark-neutrals3: #E6E8EC
+$dark-neutrals4: #B1B5C3
+$dark-neutrals5: #777E90
+$dark-neutrals6: #353945
+$dark-neutrals7: #23262F
+$dark-neutrals8: #141416
+
 // typography
 =body-1
   font-size: 24px
-  line-height: (32/24)
+  line-height: calc(32 / 24)
   letter-spacing: -.01em
 
 =body-2
   font-size: 24px
-  line-height: (32/24)
+  line-height: calc(32 / 24)
   font-weight: 600
 
 =caption-1
   font-size: 14px
-  line-height: (24/14)
+  line-height: calc(24 / 14)
 
 =caption-2
   font-size: 12px
-  line-height: (20/12)
+  line-height: calc(20 / 12)
 
 =hairline-1
   line-height: 1
@@ -89,7 +112,7 @@ $neutrals8: #FCFCFD
 =button-2
   +sf-pro-display
   font-size: 14px
-  line-height: (16/14)
+  line-height: calc(16 / 14)
   font-weight: 700
   
 //triangle
@@ -98,16 +121,16 @@ $neutrals8: #FCFCFD
   height: 0px
   border-style: solid
   @if $direction == t
-    border-width: 0 $width / 2 + px $height + px $width / 2 + px
+    border-width: 0 calc($width / 2) + px $height + px calc($width / 2) + px
     border-color: transparent transparent $bg transparent
   @if $direction == r
-    border-width: $height / 2 + px 0 $height / 2 + px $width + px
+    border-width: calc($height / 2) + px 0 calc($height / 2) + px $width + px
     border-color: transparent transparent transparent $bg
   @if $direction == b
-    border-width: $height + px $width / 2 + px 0 $width / 2 + px
+    border-width: $height + px calc($width / 2) + px 0 calc($width / 2) + px
     border-color: $bg transparent transparent transparent
   @if $direction == l
-    border-width: $height / 2 + px $width + px $height / 2 + px 0
+    border-width: calc($height / 2) + px $width + px calc($height / 2) + px 0
     border-color: transparent $bg transparent transparent
   @if $direction == tl
     border-width: $height + px $width + px 0 0

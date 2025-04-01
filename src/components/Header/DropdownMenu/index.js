@@ -40,7 +40,7 @@ const DropdownMenu = ({ item, className, setValue }) => {
                                         onClick={() => handleClick()}
                                     >
                                         <div className={styles.info}>
-                                            Find a class to achieve your goals
+                                            Haz crecer tu Negocio 
                                             🔥
                                         </div>
                                         <div className={styles.preview}>

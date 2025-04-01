@@ -25,7 +25,7 @@ function App() {
                     }
                 />
                 <Route
-                    path="features"
+                    path="caracteristicas"
                     element={
                         <Page>
                             <Features />
@@ -33,7 +33,7 @@ function App() {
                     }
                 />
                 <Route
-                    path="pricing"
+                    path="precios"
                     element={
                         <Page>
                             <Pricing />
@@ -41,7 +41,7 @@ function App() {
                     }
                 />
                 <Route
-                    path="download"
+                    path="descargar"
                     element={
                         <Page>
                             <Download />

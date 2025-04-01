@@ -1,38 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8" />
-  <title>Fitness Pro</title>
+  <title>Vendly - Sistema POS Móvil para Negocios en Colombia</title>
   <meta
-    content="Premium Web UI Kit for Fitness Experience"
+    content="Sistema punto de venta móvil para negocios en Colombia. Funciona sin internet, con facturación DIAN e integración WhatsApp."
     name="description">
-  <meta content="Fitness Pro: Website UI Kit" property="og:title">
+  
+  <!-- Open Graph / Facebook -->
+  <meta content="Vendly - Sistema POS Móvil para Negocios en Colombia" property="og:title">
   <meta
-    content="Premium Web UI Kit for Fitness Experience"
+    content="Sistema punto de venta móvil para negocios en Colombia. Funciona sin internet, con facturación DIAN e integración WhatsApp."
     property="og:description">
-  <meta content="%PUBLIC_URL%/fb-og-image.png" property="og:image">
-  <meta property="og:url" content="https://ui8.net/ui8/products/fitness-pro-website-ui-kit">
-  <meta property="og:site_name" content="Fitness Pro: Website UI Kit">
-  <meta content="Fitness Pro: Website UI Kit" property="twitter:title">
-  <meta
-    content="Premium Web UI Kit for Fitness Experience"
-    property="twitter:description">
-  <meta content="%PUBLIC_URL%/twitter-card.png" property="twitter:image">
+  <meta content="https://vendly.co/images/og/vendly-og.jpg" property="og:image">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://vendly.co/">
+  <meta property="og:site_name" content="Vendly">
   <meta property="og:type" content="website">
-  <meta content="summary" name="twitter:card">
-  <meta name="twitter:site" content="@ui8">
-  <meta name="twitter:creator" content="@ui8">
-  <meta property="fb:admins" content="132951670226590">
+  <meta property="og:locale" content="es_CO">
+  
+  <!-- Twitter -->
+  <meta content="Vendly - Sistema POS Móvil para Negocios en Colombia" property="twitter:title">
+  <meta
+    content="Sistema punto de venta móvil para negocios en Colombia. Funciona sin internet, con facturación DIAN e integración WhatsApp."
+    property="twitter:description">
+  <meta content="https://vendly.co/images/og/vendly-og.jpg" property="twitter:image">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta name="twitter:site" content="@vendlyco">
+  <meta name="twitter:creator" content="@vendlyco">
+  
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="CO">
+  <meta name="geo.placename" content="Colombia">
+  
+  <!-- Favicon -->
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#ffffff" />
   <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
   <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -41,16 +54,41 @@
       src: url("/fonts/SFProDisplay-Bold.woff2") format("woff2"), url("/fonts/SFProDisplay-Bold.woff") format("woff");
     }
   </style>
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+  
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "VENDLY",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android, iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "59000.00",
+        "priceCurrency": "COP"
+      },
+      "description": "Sistema POS y facturación DIAN para negocios en Colombia."
+    }
+  </script>
+  
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Vendly",
+      "url": "https://vendly.co",
+      "logo": "https://vendly.co/images/logo.png",
+      "sameAs": [
+        "https://twitter.com/vendlyco",
+        "https://www.facebook.com/vendlyco",
+        "https://www.instagram.com/vendly.co"
+      ]
+    }
+  </script>
 </head>
+
 <body>
   <script>
     // Insert this script in your index.html right after the <body> tag.

@@ -13,20 +13,20 @@ const menu = [
         url: "/lifestyle",
     },
     {
-        title: "Pricing",
-        url: "/pricing",
+        title: "Precios",
+        url: "/precios",
     },
     {
         title: "Class",
         url: "/class01",
     },
     {
-        title: "Features",
-        url: "/features",
+        title: "Caracteristicas",
+        url: "/caracteristicas",
     },
     {
-        title: "Download",
-        url: "/download",
+        title: "Descargar",
+        url: "/descargar",
     },
 ];
 
@@ -107,7 +107,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className={styles.col}>
-                        <div className={styles.category}>contact</div>
+                        <div className={styles.category}>contacto</div>
                         <div className={styles.info}>
                             <p>43252 Borer Mountains</p>
                             <p>Zackerychester</p>
@@ -131,7 +131,7 @@ const Footer = () => {
             <div className={styles.foot}>
                 <div className={cn("container", styles.container)}>
                     <div className={styles.copyright}>
-                        Copyright © 2021 UI8 LLC. All rights reserved
+                        Copyright © 2025 VENDLY LLC. All rights reserved
                     </div>
                     <div className={styles.socials}>
                         {socials.map((x, index) => (

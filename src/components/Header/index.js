@@ -8,28 +8,28 @@ import Image from "../Image";
 
 const navLinks = [
     {
-        title: "Features",
-        url: "/features",
+        title: "Caracteristicas",
+        url: "/caracteristicas",
     },
     {
-        title: "Pricing",
-        url: "/pricing",
+        title: "Precios",
+        url: "/precios",
     },
     {
-        title: "Download",
-        url: "/download",
+        title: "Descargar",
+        url: "/descargar",
     },
     {
-        title: "Class",
+        title: "Blog",
         content: {
             menu: [
                 {
-                    title: "Program Videos",
+                    title: "Facturación DIAN",
                     url: "/class01",
                     image: "/images/menu-video.svg",
                 },
                 {
-                    title: "Premium Class",
+                    title: "Comercio Electronico",
                     url: "/class02",
                     image: "/images/menu-class.svg",
                 },
@@ -222,7 +222,7 @@ const Headers = () => {
                             )}
                             to="/"
                         >
-                            Get free trial
+                            Prueba ahora
                         </Link>
                     </div>
                 </div>
@@ -230,7 +230,7 @@ const Headers = () => {
                     className={cn("button-stroke button-small", styles.button)}
                     to="/"
                 >
-                    Get free trial
+                    Prueba ahora
                 </Link>
                 <button
                     className={cn(styles.burger, {
